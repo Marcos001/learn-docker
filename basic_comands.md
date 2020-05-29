@@ -1,11 +1,11 @@
- 
-# ------- BASIC COMMANDS
 
-# list images
-docker image list
+# Commands Docker
 
-# download or update images
- docker image pull python
+## BASIC COMMANDS
+
+ - list images: `docker image list`
+
+ - download or update images: `docker image pull python`
 
 # inpect image
 docker image inspect python
