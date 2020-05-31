@@ -50,8 +50,16 @@
 
 ## UNDERSTAND DOCKER NETWORK
 
+The network in docker can be three types = [*bridge*, *none*, *host*]
+
 - view network interfaces
   - `docker network ls`
+- Test ping between containers
+  - `docker container exec -it "container 1" ping "container 1"`
+- create network:
+  - `docker network create --driver bridge "type"`
+- understand network:
+  - `docker network inspect "type"`
 
 
 ### References
