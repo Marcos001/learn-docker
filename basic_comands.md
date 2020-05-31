@@ -39,5 +39,21 @@
 
  - mount volume to OS to docker
     - `docker container run -v /var/lib/container1:/var ubuntu`
+- create volume in container
+  - `docker create -v /dbdata --name dbdata postgres /bin/true`
+- volumes from other container
+  - `docker container run -d --volumes-from dbdata --name db2 postgres`
+- create a volume
+  -  `docker volume create --name dbdata`
+- associate volume  created in container
+  - `docker container run -d -v dbdata:/var/lib/data postgres`
+
+## UNDERSTAND DOCKER NETWORK
+
+- view network interfaces
+  - `docker network ls`
 
 
+### References
+ - [Docker para desenvolvedores](https://leanpub.com/dockerparadesenvolvedores)
+ - [Docker Docs](https://docs.docker.com/)
