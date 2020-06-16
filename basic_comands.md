@@ -12,6 +12,8 @@
  - run container:
       - `docker container run <parametros> <imagem> <CMD> <argumentos>`
      - Example: `docker container run -it --rm --name meu_python python bash`
+- run bash in container:
+     - `docker exec -ti "container" /bin/bash`
  - map volume: 
       - `docker container run -it --rm -v "<host>:<container\>" python`
  - map ports:
